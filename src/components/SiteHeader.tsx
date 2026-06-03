@@ -30,13 +30,14 @@ export function SiteHeader() {
 
         <nav className="hidden items-center gap-7 lg:flex">
           {navItems.map((n) => (
-            <a
+            <Link
               key={n.id}
-              href={`#${n.id}`}
+              to="/"
+              hash={n.id}
               className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
             >
               {t(n.key)}
-            </a>
+            </Link>
           ))}
         </nav>
 
