@@ -99,6 +99,8 @@ const dict = {
 
     "gallery.eyebrow": "Gallery",
     "gallery.title": "Clean, tidy, built to last.",
+    "brands.title": "Choose your car brand",
+    "brands.subtitle": "We fit LPG systems in cars of every make — from classics to modern direct-injection engines.",
 
     "reviews.eyebrow": "Google Reviews",
     "reviews.title": "Our rating is 4.9 / 5",
