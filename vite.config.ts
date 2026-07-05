@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/auto-gaz-stag/', // Dokładnie tak, ze slashem z przodu i z tyłu!
+  base: '/auto-gaz-stag/', 
 })
