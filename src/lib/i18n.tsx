@@ -16,7 +16,7 @@ const dict = {
     "hero.title": "Profesjonalny montaż instalacji LPG. Realna oszczędność na każdym kilometrze.",
     "hero.subtitle": "Rodzinny warsztat z wieloletnim doświadczeniem. Czysty, estetyczny montaż, gwarancja i serwis na lata.",
     "hero.cta": "Zadzwoń teraz: 609 258 834",
-    "hero.cta_sub": "Wycena gratis · od wtorku 07:00",
+    "hero.cta_sub": "Wycena gratis · od poniedziałku 07:00",
 
     "calc.title": "Policz, ile zaoszczędzisz",
     "calc.subtitle": "Przesuń suwaki i zobacz, jak szybko inwestycja się zwróci.",
