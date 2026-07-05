@@ -3,6 +3,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { BRANDS, getBrandBySlug } from "@/lib/brands";
 import { useI18n } from "@/lib/i18n";
 import { BrandLogo } from "@/components/BrandLogo";
+import { BrandGallery } from "@/components/BrandGallery";
 
 export const Route = createFileRoute("/montaz-lpg/$brandSlug")({
   loader: ({ params }) => {
@@ -64,6 +65,16 @@ function BrandPage() {
             </p>
           </div>
         </div>
+
+        <section className="mt-12">
+          <h2 className="text-2xl font-bold tracking-tight text-foreground">Realizacje</h2>
+          <p className="mt-2 text-sm text-muted-foreground">
+            Nasze montaże instalacji LPG w samochodach {brand.name}.
+          </p>
+          <div className="mt-6">
+            <BrandGallery photos={brand.photos} brandName={brand.name} />
+          </div>
+        </section>
 
         <div className="mt-12">
           <h2 className="text-lg font-semibold text-foreground">Inne marki</h2>
