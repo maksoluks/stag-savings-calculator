@@ -1,7 +1,9 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vinxi' // lub @tanstack/start/config
 
 export default defineConfig({
-  plugins: [react()],
-  base: '/auto-gaz-stag/', 
+  server: {
+    prerender: {
+      routes: ['/', '/privacy'] // dodaj tu ścieżki, które mają się wyrenderować do HTML
+    }
+  }
 })
