@@ -76,7 +76,7 @@ const dict = {
     "hero.title": "Professional LPG installations. Real savings on every kilometer.",
     "hero.subtitle": "A family-run workshop with years of experience. Clean, tidy installs, full warranty and long-term service.",
     "hero.cta": "Call now: +48 609 258 834",
-    "hero.cta_sub": "Free quote · open from Tuesday 07:00",
+    "hero.cta_sub": "Free quote · open from Monday 07:00",
 
     "calc.title": "See how much you'll save",
     "calc.subtitle": "Drag the sliders and watch the payback time drop.",
@@ -112,7 +112,7 @@ const dict = {
     "contact.title": "Drop by the workshop or give us a call",
     "contact.phone": "Phone",
     "contact.hours": "Opening hours",
-    "contact.hoursValue": "Tuesday – Friday: 07:00 – 17:00\nSaturday: 08:00 – 13:00\nSunday – Monday: closed",
+    "contact.hoursValue": "Monday – Friday: 07:00 – 17:00\nSaturday: 08:00 – 13:00\nSunday: closed",
     "contact.address": "Address",
     "contact.addressValue": "DW809 56A, 21-002 Jastków, Poland",
     "contact.fb": "Facebook",
