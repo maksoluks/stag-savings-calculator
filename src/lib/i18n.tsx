@@ -52,7 +52,7 @@ const dict = {
     "contact.title": "Wpadnij do warsztatu lub zadzwoń",
     "contact.phone": "Telefon",
     "contact.hours": "Godziny otwarcia",
-    "contact.hoursValue": "Wtorek – Piątek: 07:00 – 17:00\nSobota: 08:00 – 13:00\nNiedziela – Poniedziałek: zamknięte",
+    "contact.hoursValue": "Poniedziałek – Piątek: 07:00 – 17:00\nSobota: 08:00 – 13:00\nNiedziela: zamknięte",
     "contact.address": "Adres",
     "contact.addressValue": "DW809 56A, 21-002 Jastków",
     "contact.fb": "Facebook",
