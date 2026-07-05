@@ -4,6 +4,7 @@ on:
   push:
     branches: [main]
 
+# Ustawia uprawnienia dla GITHUB_TOKEN, aby umożliwić wdrożenie na GitHub Pages
 permissions:
   contents: read
   pages: write
@@ -40,8 +41,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Zmień z './dist' na ścieżkę generowaną przez TanStack Start / Vinxi:
-          path: './.output/public'
+          path: './dist'
 
       - name: Deploy to GitHub Pages
         id: deployment
