@@ -1,9 +1,15 @@
-import { defineConfig } from 'vinxi' // lub @tanstack/start/config
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-  server: {
-    prerender: {
-      routes: ['/', '/privacy'] // dodaj tu ścieżki, które mają się wyrenderować do HTML
-    }
-  }
+  plugins: [react()],
+  base: '/auto-gaz-stag/',
+  build: {
+    rollupOptions: {
+      external: [
+        'node:async_hooks',
+        '@tanstack/start-storage-context'
+      ],
+    },
+  },
 })
