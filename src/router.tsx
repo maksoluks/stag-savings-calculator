@@ -10,6 +10,8 @@ export const getRouter = () => {
     context: { queryClient },
     scrollRestoration: true,
     defaultPreloadStaleTime: 0,
+    // Dodaj tę linię poniżej:
+    basepath: '/auto-gaz-stag',
   });
 
   return router;
