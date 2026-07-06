@@ -4,10 +4,22 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Auto Gaz Adam Rogowski</title>
+    <title>Auto Gaz Adam Rogowski — STAG Mechanika Rogowski</title>
+    <meta name="description" content="Autoryzowany montaż i serwis instalacji LPG STAG w Jastkowie. Wycena gratis." />
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem('theme');
+          var d = t ? t === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+          if (d) document.documentElement.classList.add('dark');
+          var l = localStorage.getItem('lang');
+          if (l) document.documentElement.lang = l;
+        } catch (e) {}
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/start.ts"></script>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
