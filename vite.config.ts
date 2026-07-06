@@ -1,18 +1,13 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import { nodePolyfills } from 'vite-plugin-node-polyfills'
+import path from 'path'
 
 export default defineConfig({
-  plugins: [
-    react(),
-    // Ta wtyczka przechwyci importy "node:async_hooks" i zapobiegnie wywaleniu buildu
-    nodePolyfills({
-      include: ['async_hooks'],
-      globals: {
-        Buffer: false,
-        global: false,
-        process: false,
-      },
-    }),
-  ],
+  plugins: [react()],
+  resolve: {
+    alias: {
+      // Przechwytuje import serwerowy i podmienia go na bezpieczną dla przeglądarki klasę
+      'node:async_hooks': path.resolve(__dirname, './mock-async-hooks.js'),
+    },
+  },
 })
