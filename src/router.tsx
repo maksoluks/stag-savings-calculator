@@ -1,6 +1,9 @@
 import { QueryClient } from "@tanstack/react-query";
-import { createRouter } from "@tanstack/react-router";
+import { createRouter, createHashHistory } from "@tanstack/react-router"; // Dodaliśmy createHashHistory
 import { routeTree } from "./routeTree.gen";
+
+// Tworzymy historię opartą o hash, idealną dla GitHub Pages
+const hashHistory = createHashHistory();
 
 export const getRouter = () => {
   const queryClient = new QueryClient();
@@ -10,8 +13,7 @@ export const getRouter = () => {
     context: { queryClient },
     scrollRestoration: true,
     defaultPreloadStaleTime: 0,
-    // Ta linijka mówi routerowi: "Ignoruj /auto-gaz-stag i traktuj to jako /"
-    basepath: '/auto-gaz-stag', 
+    history: hashHistory, // Wpinamy hashHistory zamiast domyślnego browserHistory
   });
 
   return router;
