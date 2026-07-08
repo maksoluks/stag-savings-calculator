@@ -38,41 +38,52 @@ function PrivacyPage() {
 function PrivacyPL() {
   return (
     <>
-      <h2 className="text-xl font-semibold">1. Administrator danych</h2>
+      <h2 className="text-xl font-semibold">1. Administrator Danych Osobowych</h2>
       <p>
-        Administratorem danych osobowych jest STAG Mechanika Rogowski, DW809 56A, 21-002 Jastków,
-        tel. 609 258 834.
+        Administratorem Państwa danych osobowych jest firma Auto Gaz Adam Rogowski z siedzibą w
+        Snopków 56A, 21-002 Jastków Poland Kontakt z Administratorem jest możliwy pod adresem e-mail: adam.rogowski.net@gmail.com lub numerem telefonu: 609258834.
       </p>
-      <h2 className="text-xl font-semibold">2. Zakres przetwarzanych danych</h2>
+      <h2 className="text-xl font-semibold">2. Cele i podstawy prawne przetwarzania</h2>
       <p>
-        Przetwarzamy wyłącznie dane niezbędne do realizacji usługi montażu i serwisu instalacji LPG —
-        m.in. imię i nazwisko, numer telefonu, dane pojazdu oraz dane wymagane przez przepisy
-        homologacyjne i podatkowe.
+        Państwa dane będą przetwarzane w celu:
       </p>
-      <h2 className="text-xl font-semibold">3. Cel i podstawa prawna</h2>
       <p>
-        Dane przetwarzamy na podstawie art. 6 ust. 1 lit. b i c RODO — w celu wykonania umowy oraz
-        realizacji obowiązków prawnych ciążących na administratorze (m.in. wystawianie faktur,
-        prowadzenie dokumentacji warsztatowej).
+      realizacji usługi serwisowej, montażu instalacji LPG oraz wystawienia niezbędnej dokumentacji (podstawa: art. 6 ust. 1 lit. b RODO – wykonanie umowy);
       </p>
-      <h2 className="text-xl font-semibold">4. Czas przechowywania</h2>
       <p>
-        Dane przechowujemy przez czas niezbędny do wykonania usługi oraz przez okres wymagany
-        odrębnymi przepisami, w szczególności podatkowymi i homologacyjnymi.
+      wypełnienia obowiązków prawnych ciążących na Administratorze, np. wystawiania faktur i przechowywania dokumentacji księgowej (podstawa: art. 6 ust. 1 lit. c RODO);
       </p>
-      <h2 className="text-xl font-semibold">5. Twoje prawa</h2>
       <p>
-        Masz prawo dostępu do treści swoich danych, ich sprostowania, usunięcia, ograniczenia
-        przetwarzania, przenoszenia oraz wniesienia skargi do Prezesa UODO.
+      ewentualnego ustalenia, dochodzenia lub obrony przed roszczeniami (podstawa: art. 6 ust. 1 lit. f RODO – prawnie uzasadniony interes).
       </p>
+      <h2 className="text-xl font-semibold">3. Okres przechowywania danych</h2>
+      <p>
+        Dane będą przechowywane przez okres niezbędny do realizacji usługi, a po 
+        jej zakończeniu przez czas wymagany przepisami prawa podatkowego (5 lat) 
+        lub do upływu terminu przedawnienia ewentualnych roszczeń.
+      </p>
+      <h2 className="text-xl font-semibold">4. Odbiorcy danych</h2>
+      <p>
+        Odbiorcami Państwa danych mogą być podmioty uprawnione do uzyskania danych 
+        na podstawie przepisów prawa, biura rachunkowe, firmy kurierskie oraz dostawcy 
+        oprogramowania technicznego niezbędnego do obsługi instalacji gazowych.
+      </p>
+      <h2 className="text-xl font-semibold">5. Prawa osoby, której dane dotyczą</h2>
+      <p>
+      Przysługuje Państwu prawo do:
+      </p>
+      <p>dostępu do swoich danych oraz otrzymania ich kopii;</p>
+      <p>usunięcia danych lub ograniczenia ich przetwarzania;</p>
+      <p>wniesienia sprzeciwu wobec przetwarzania;</p>
+      <p>wniesienia skargi do Organu Nadzorczego – Prezesa Urzędu Ochrony Danych Osobowych.</p>
       <h2 className="text-xl font-semibold">6. Pliki cookies</h2>
       <p>
         Strona internetowa wykorzystuje wyłącznie pliki cookies niezbędne do działania (preferencje
         języka i motywu) oraz osadzony serwis Google Maps. Nie używamy plików cookies do profilowania
         marketingowego.
       </p>
-      <h2 className="text-xl font-semibold">7. Kontakt</h2>
-      <p>W sprawach dotyczących danych osobowych zapraszamy do kontaktu telefonicznego lub osobistego w warsztacie.</p>
+      <h2 className="text-xl font-semibold">7. Dobrowolność podania danych</h2>
+      <p> Podanie danych osobowych (takich jak imię, nazwisko, numer rejestracyjny pojazdu, numer telefonu) jest dobrowolne, ale niezbędne do przyjęcia pojazdu do serwisu i wykonania usługi.</p>
     </>
   );
 }
