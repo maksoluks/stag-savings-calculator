@@ -7,9 +7,11 @@ type Props = {
 };
 
 export function BrandLogo({ brand, className = "" }: Props) {
-  const [errored, setErrored] = useState(false);
+  const [stage, setStage] = useState<"local" | "cdn" | "fallback">(
+    brand.logoUrl ? "local" : "cdn",
+  );
 
-  if (errored) {
+  if (stage === "fallback") {
     return (
       <span
         aria-hidden="true"
@@ -21,12 +23,17 @@ export function BrandLogo({ brand, className = "" }: Props) {
     );
   }
 
+  const src =
+    stage === "local" && brand.logoUrl
+      ? brand.logoUrl
+      : `https://cdn.simpleicons.org/${brand.slug}`;
+
   return (
     <img
-      src={`https://cdn.simpleicons.org/${brand.iconSlug}`}
+      src={src}
       alt={`${brand.name} logo`}
       loading="lazy"
-      onError={() => setErrored(true)}
+      onError={() => setStage(stage === "local" ? "cdn" : "fallback")}
       className={className}
     />
   );
